@@ -1,0 +1,30 @@
+//using recurssion
+
+
+package java7;
+//using recurssion
+public class Fiboanciseries_2 {
+	
+	static int n1=0, n2=1, n3=0, i=10;
+	
+	static void PintFi(int i) {
+		if(i>0) {
+		n3=n1+n2;
+		System.out.println(" "+n3);   
+		n1=n2;
+		n2=n3;
+		
+		PintFi(i-1);
+		}
+	}
+	
+	public static void main(String[]args) {
+		System.out.println(+n1);
+		System.out.println(+n2);
+		PintFi(i-2);
+		
+	}
+	
+	
+
+}
