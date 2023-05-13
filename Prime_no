@@ -1,0 +1,36 @@
+//Prime number in Java: Prime number is a number that is greater than 1 and divided by 1 or itself only. 
+//In other words, prime numbers can't be divided by other numbers than itself or 1. For
+//example 2, 3, 5, 7, 11, 13, 17.... are the prime numbers.
+
+package java7;
+
+public class PrimeNo {
+	
+	public static void main(String[] args) {
+		 int flag=0;
+		int m ;
+	    int num=3;
+	    int n=num/2;
+		if (num==0||num==1) {
+			
+			System.out.println("num is not prime ");
+			
+			
+		}
+		else {
+			
+			for(m=2;m<=n;m++) {
+				
+				if (num%m==0) {
+					
+					System.out.println("num is not prime ");
+					
+					flag =1;
+					break;
+				
+				
+				
+			}
+			}}if (flag==0) {
+				System.out.println("num is prime");}}}
+	
